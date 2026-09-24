@@ -29,14 +29,21 @@ Subject: URGENT: Verify your account now
 
 Red flags found:
   - Urgent language detected: 'urgent'
+  - Urgent language detected: 'immediate'
   - Urgent language detected: 'verify your account'
-  - Urgent language detected: 'click here'
   - Urgent language detected: 'suspended'
+  - Urgent language detected: 'click here'
+  - Urgent language detected: 'confirm your identity'
   - Sender address contains numbers: security123@paypa1.com
+  - Sender domain looks suspicious: paypa1.com
 
 Verdict: LIKELY PHISHING - Do not click any links or reply.
 ---------------------------------
 ```
+
+Checks also cover links in the subject, lookalike sender domains such as `paypa1.com`, and links that hide the real site before an `@` sign. A shortened name that only appears inside a longer path, such as `mybit.ly`, is not treated as `bit.ly`.
+
+Broken and improved with Grok Build.
 
 ## Why this matters
 
